@@ -1,0 +1,79 @@
+.list__container {
+	margin: 20px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.list__item a {
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.person__photo {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: 5px;
+}
+
+.person__name {
+}
+
+.person__comment {
+}
+
+.wrapper__input {
+	--border-radius: 5px;
+	--border: 5px;
+	--clear-width: 45px;
+	--tp: 20px;
+}
+
+.wrapper__input {
+	position: relative;
+	display: inline-flex;
+}
+
+input {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	min-width: 300px;
+	padding: 10px 15px;
+	padding-right: calc(var(--clear-width) + 15px);
+	border: var(--border) solid #dfe2df;
+	border-radius: var(--border-radius);
+	font-size: 16px;
+	font-family: sans-serif;
+	outline: none;
+}
+
+input:focus {
+	border: var(--border) solid #6a83fb;
+}
+
+.clear {
+	position: absolute;
+	top: var(--tp);
+	right: 0px;
+	width: var(--clear-width);
+	height: calc(100% - var(--tp) * 3);
+	padding: 10px;
+	object-fit: contain;
+	object-position: center center;
+	transition: 0.5s;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.clear__disabled {
+	opacity: 0.3;
+}
+
+@media screen and (max-width: 600px) {
+	input {
+		min-width: 315px;
+	}
+}

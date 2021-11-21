@@ -1,0 +1,34 @@
+.container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	flex-shrink: 0;
+	margin-left: auto;
+}
+
+.icon {
+	width: 100%;
+	height: 100%;
+}
+
+.counter {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #000;
+	text-decoration: none;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 16px 24px 2px rgba(255, 255, 255, 0.02),
+		0 6px 30px 5px rgba(255, 255, 255, 0.04),
+		0 8px 10px -5px rgba(255, 255, 255, 0.1);
+}

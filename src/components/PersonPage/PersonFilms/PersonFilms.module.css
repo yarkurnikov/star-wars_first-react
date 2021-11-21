@@ -1,0 +1,42 @@
+.wrapper {
+	margin-left: 30px;
+	padding: 20px 0;
+}
+
+.list__container {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.list__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 7px;
+}
+
+.item__episode {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #f75d83;
+	color: #fff;
+}
+
+.item__colon {
+	width: 20px;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+}
+
+.item__title {
+	color: #fff;
+	text-shadow: 0 0 2px #fff, 0 0 40px #cccc46;
+}
+
+@media screen and (max-width: 1020px) {
+	.wrapper {
+		width: 100%;
+		margin: 0;
+	}
+}
